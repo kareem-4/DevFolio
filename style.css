@@ -1,0 +1,811 @@
+body
+{
+    background-color: #f5f5f5;
+}
+
+.clear-fix
+{
+    clear: both;
+}
+/* ------------------------ In Common --------------------------------- */
+#reviews , #contact
+{
+    background-image: url(images/overlay-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding: 8rem 0;
+    z-index: 0;
+}
+#reviews .overlay  , #contact .overlay
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #0078ff;
+    opacity: 0.7;
+    z-index: -1;
+}
+
+/* --- Section Title + Bar --- */
+
+.section-title h2
+{
+    font-size: 3rem;
+    font-weight: bold;
+    color: #1e1e1e;
+}
+.section-title p
+{
+    color: #4e4e4e;
+    position: relative;
+}
+.section-title p::after
+{
+    content: "";
+    width: 40px;
+    height: 5px;
+    background-color: #0078ff;
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* --- Section Inside Heading --- */
+
+
+.heading h3
+{
+    font-size: 2rem;
+    position: relative;
+    margin-bottom: 3rem;
+}
+.heading h3::before
+{
+    content: '';
+    position: absolute;
+    height: 3px;
+    background-color: #0078ff;
+    width: 100px;
+    bottom: -12px;
+}
+
+
+
+
+/* ------------------------  Navbar Section  --------------------------------- */
+
+.navbar
+{
+    z-index: 99;
+    background-color: rgba(0,0,0,0.9);
+}
+
+.dropdown-menu li
+{
+    margin: .7rem 0;
+}
+.navbar .dropdown ul a i {
+    font-size: 12px;
+    color: #0078ff;
+}
+
+.navbar .dropdown ul a {
+    padding: 10px 20px;
+    font-size: 14px;
+    text-transform: none;
+    color: #4e4e4e;
+}
+.navbar .navbar-nav > li {
+    padding: 10px 0 10px 20px;
+}
+.nav-item {
+    font-weight: 600;
+}
+.nav-link
+{
+    position: relative;
+}
+.dropdown-menu .dropdown-item:hover
+{
+    color: #0078ff !important;
+}
+.navbar-brand
+{
+    font-size: 28px;
+    font-weight: 600;
+}
+.navbar-light .navbar-toggler
+{
+    border-color:grey;
+}
+.navbar-toggler-icon
+{
+    background-image: none !important;
+}
+.navbar-toggler-icon i
+{
+    color: white;
+    font-size: 30px;
+}
+
+/* -------- Media Quiers ---------- */
+
+@media screen and (min-width:992px){
+    .navbar .collapse .nav-item  ::before {
+        content: "";
+        position: absolute;
+        width: 0%;
+        height: 2.5px;
+        background-color: #fff;
+        bottom: 0px;
+        left: 10%;
+        transition: all .3s ease-in;
+    } 
+    .navbar .collapse .nav-item:hover ::before
+    {
+        width: 65%;
+    }
+    .navbar .collapse .used  ::before {
+        content: "";
+        position: absolute;
+        width: 65%;
+        height: 2.5px;
+        background-color: #fff;
+        bottom: 0px;
+        left: 10%;
+    } 
+}
+
+
+/* ------------------------  Home Section  --------------------------------- */
+
+#home
+{
+    background-image: url(images/intro-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+}
+
+#home .overlay
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0,0,0,0.6);
+    opacity: 0.9;
+    z-index: 0;
+}
+#home h2
+{
+    font-size: 4.5rem;
+}
+.caption h2::after
+{
+    content: "";
+    display: block;
+    text-align: center;
+    animation: typing 9s infinite linear;
+    font-size: 40px;
+    margin-top: 1.5rem;
+}
+@keyframes typing {
+    0%{
+        content: "|";
+    }
+    2%{
+        content: "D|";
+    }
+    4%{
+        content: "De|";
+    }
+    6%{
+        content: "Des|";
+    }
+    8%{
+        content: "Desi|";
+    }
+    10%{
+        content: "Desig|";
+    }
+    12%{
+        content: "Design|";
+    }
+    14%{
+        content: "Designe|";
+    }
+    16%{
+        content: "Designer";
+    }
+    18%{
+        content: "Designer|";
+    }
+    20%{
+        content: "Designer";
+    }
+    22%{
+        content: "Designer|";
+    }
+    24%{
+        content: "Designe|";
+    }
+    26%{
+        content: "Design|";
+    }
+    28%{
+        content: "Desig|";
+    }
+    30%{
+        content: "Desi|";
+    }
+    32%{
+        content: "Des|";
+    }
+    34%{
+        content: "De|";
+    }
+    36%{
+        content: "Dev|";
+    }
+    38%{
+        content: "Deve|";
+    }
+    40%{
+        content: "Devel|";
+    }
+    42%{
+        content: "Develo|";
+    }
+    44%{
+        content: "Develop|";
+    }
+    46%{
+        content: "Develope|";
+    }
+    
+    48%{
+        content: "Developer|";
+    }
+    
+    50%{
+        content: "Developer";
+    }
+    
+    52%{
+        content: "Developer|";
+    }
+    
+    54%{
+        content: "Developer";
+    }
+    
+    56%{
+        content: "Developer|";
+    }
+    58%{
+        content: "Develope|";
+    }
+    60%{
+        content: "Develop|";
+    }
+    62%{
+        content: "Develo|";
+    }
+    64%{
+        content: "Devel|";
+    }
+    66%{
+        content: "Deve|";
+    }
+    68%{
+        content: "Dev|";
+    }
+    70%{
+        content: "De|";
+    }
+    72%{
+        content: "D|";
+    }
+    74%{
+        content: "|";
+    }
+    76%{
+        content: "P|";
+    }
+    78%{
+        content: "Ph|";
+    }
+    80%{
+        content: "Pho|";
+    }
+    82%{
+        content: "Phot|";
+    }
+    84%{
+        content: "Photo|";
+    }
+    86%{
+        content: "Photog|";
+    }
+    88%{
+        content: "Photogr|";
+    }
+    90%{
+        content: "Photogra|";
+    }
+    92%{
+        content: "Photograp|";
+    }
+    94%{
+        content: "Photograph|";
+    }
+    96%{
+        content: "Photographe|";
+    }
+    98%{
+        content: "Photographer|";
+    }
+    100%{
+        content: "Photographer";
+    }
+     
+}
+/* --------   Media Queries --------- */
+
+@media screen and (max-width:768px ){
+
+    #home h2
+    {
+        font-size: 2.5rem;
+        text-align: center;
+    }
+    .caption h2::after
+    {
+        font-size: 25px;
+
+    }
+
+}
+
+
+
+/* -----------------------   Section About -------------------------- */
+
+#about .container
+{
+    box-shadow: 0 1px 1px 0 rgb(0 0 0 / 6%), 0 2px 5px 0 rgb(0 0 0 / 20%);
+    margin-bottom: 3rem;
+    padding: 4rem 3rem 4rem 3rem;
+}
+
+#about .left p
+{
+    display: inline-block;
+    font-weight: 600;
+    color: #1e1e1e;
+    font-size: 1.1rem;
+}
+#about h5
+{
+    margin-top: 1rem;
+}
+#about .status p
+{
+    margin-bottom: 5px;
+}
+#about .progress
+{
+    border-radius: 0;
+    height: .7rem;
+    margin: .5rem 0 1.2rem 0;
+
+}
+.heading .heading-box
+{
+    margin-bottom: 3rem;
+}
+.heading p
+{
+    font-size: 1.25rem;
+    font-weight: 300;
+    margin-bottom: 1rem;
+}
+
+/* -----------------------   Services Section -------------------------- */
+#services .row 
+{
+    margin-top: 5rem;
+}
+
+.service-box
+{
+    border-radius: 16px;
+    background-color: white;
+    padding: 2.5rem 1.3rem;
+    margin-bottom: 3rem;
+    box-shadow: 0 13px 8px -10px rgb(0 0 0 / 10%);
+}
+.service-box span 
+{
+    height: 100px;
+    width: 100px;
+    font-size: 2rem;
+    border-radius: 50%;
+    line-height: 1.55;
+    margin: auto;
+    text-align: center;
+    box-shadow: 0 0 0 10px #0078ff;
+    margin-bottom: 1rem;
+    transition: all 500ms ease;
+
+}
+.service-box span:hover
+{
+    transition: all 500ms ease;
+    color: #fff;
+    background-color: #0078ff;
+    box-shadow: 0 0 0 10px #cde1f8;
+
+}
+
+
+/* -----------------------   Counter Section  -------------------------- */
+
+
+
+#counter
+{
+    background-image: url(images/counters-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+    padding: 8rem 0rem;
+    z-index: 0;
+
+}
+#counter .overlay
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #0078ff;
+    opacity: .7;
+    z-index: -1;
+}
+#counter .content
+{
+    color: white;
+}
+#counter .content h5
+{
+    font-size: 2rem;
+    margin-top: 1rem;
+}
+#counter .content i
+{
+    font-size: 2rem;
+}
+#counter .content span
+{
+    height: 60px;
+    width: 60px;
+    line-height: 1.5;
+    box-shadow: 0 0 0 10px #cde1f8;
+    border-radius: 50%;
+}
+/* -----------------------   Portfolio Section -------------------------- */
+#portfolio
+{
+    padding: 3rem 0rem;
+}
+#portfolio .work-box
+{
+    background-color: white;
+    margin-top: 3rem;
+    box-shadow: 0 13px 8px -10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    
+}
+#portfolio .work-box .img-container
+{
+    overflow: hidden;
+}
+#portfolio .work-box img
+{
+    transition: all 1s;
+
+}
+
+#portfolio .work-box img:hover
+{
+    transform: scale(1.4);
+    transition: all 1s;
+
+}
+#portfolio .work-box .row > div
+{
+    padding: 30px 30px 15px 30px;
+}
+#portfolio .text h6
+{
+    font-size: 1.2rem;
+    color: #1e1e1e;
+    margin-bottom: 8px;
+}
+#portfolio .text p
+{
+    font-size: .8rem;
+    color: #0078ff;
+}
+#portfolio .text span
+{
+    font-size: .8rem;
+    color: #4e4e4e;
+}
+#portfolio .bttn span
+
+{
+    color: #0078ff;
+    font-size: 2.5rem;
+}
+/* -----------------------   Reviews Section -------------------------- */
+
+.carousel-caption
+{
+    position: relative;
+    top: 0;
+    left: 0;
+}
+ .carousel-indicators [data-bs-target]
+{ 
+    
+    width: 10px;
+    height:10px;
+    border-radius: 50%;
+    background-color: #fff;
+
+}
+
+
+/* ---- Media Queries ----- */
+
+@media screen and (min-width:1200px)
+{
+    #reviews p
+    {
+        padding: 0 12rem;
+    } 
+}
+@media screen and (max-width:1200px) and (min-width:992px)
+{
+    #reviews p
+    {
+        padding: 0 8rem;
+    } 
+}
+@media screen and (max-width:992px) and (min-width:768px)
+{
+    #reviews p
+    {
+        padding: 0 5rem;
+    } 
+}
+@media screen and (max-width:768px)
+{
+    #reviews p
+    {
+        padding: 0 0rem;
+    } 
+}
+
+/* -----------------------   Blog Section -------------------------- */
+
+#blog
+{
+    padding:3rem 0;
+}
+#blog .card
+{
+    margin-top: 3rem;
+    overflow: hidden;
+}
+#blog .bar img
+{
+    width: 32px;
+    height: 32px;
+    margin-right: 4px;
+    overflow: hidden;
+}
+#blog a
+{
+    text-decoration: none;
+    color: #1e1e1e;
+}
+#blog a:hover
+{
+    color: #0078ff;
+}
+#blog .info
+{
+    padding-top: 10px;
+}
+#blog .card h6
+{
+    font-size: .7rem;
+    display: inline-block;
+    color: #fff;
+    padding: 7px 15px 5px;
+    overflow: hidden;
+    background-color: #0078ff;
+    border-radius: 4px;
+    height: 30px;
+    position: absolute;
+    width: 80px;
+    text-align: center;
+    top: -16px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+#blog .caption
+{
+    padding: 1rem;
+    position: relative;
+}
+#blog .caption h3{
+    font-size: 1.3rem;
+    margin-top: .6rem;
+    margin-bottom: .5rem;
+    color: #1e1e1e;
+}
+#blog .caption p{
+    color: #4e4e4e;
+
+}
+#blog .bar {
+    padding: .5rem 1rem;
+    background-color: rgba(0,0,0,.03);
+    border-top: 1px solid rgba(0,0,0,.125);
+}
+#blog .card-blog .right {
+    display: inline-block;
+}
+#blog .icon {
+    width: 32px;
+    height: 32px;
+    margin-right: 4px;
+    overflow: hidden;
+}
+.card-blog .left {
+    color: #4e4e4e;
+    float: right;
+}
+
+
+/* -----------------------   Contact Section -------------------------- */
+
+#contact input , #contact textarea
+{
+    background-color: white;
+    border-radius: 4px;
+    border: 1px solid rgb(218, 225, 227);
+    padding: 11px 14px;
+    font-size: 1rem;
+    border: 1px solid #dae1e3;
+    border-radius: 5px;
+}
+#contact input:focus,#contact textarea:focus
+{
+    outline:none;
+    border:.5px solid #0dcaf0;
+    box-shadow: 0 0 5px #719ECE;
+}
+#contact button
+{
+    display: inline-block;
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+    background-color: #0078ff;
+    border: 2px solid #0078ff;
+    border-radius: 800px;
+    padding: .5rem 2.2rem;
+    box-shadow: 0px 5px 15px rgb(0 0 0 / 15%);
+    cursor: pointer;
+    transition: .5s ease;
+}
+#contact button:hover
+{
+    background-color: #0062d3;
+    border-color:#0062d3;
+}
+#contact .left
+{
+    padding-bottom: 1rem;
+}
+#contact .right p
+{
+    font-size: 1.25rem;
+    font-weight: 300;
+    margin-bottom: 1rem;
+}
+#contact .right span
+{
+    margin-bottom: 1rem;
+}
+
+#contact .span1::before
+{
+     content: "\f3e8";
+     color: #0078ff;
+}
+#contact .span2::before
+{
+    content: "\f4e7";
+    color: #0078ff;
+}
+#contact .span3::before
+{
+    content: "\f32f";
+     color: #0078ff;
+}
+#contact .icons > div
+{
+    width: 50px;
+    height: 50px;
+    font-size: 1.2rem;
+    color: black;
+    border:3px solid #0078ff;
+    border-radius: 50%;
+    position: relative;
+    margin-top: .5rem;
+    margin-left: 1rem;
+    transition: all 500ms ease;
+
+    
+}
+#contact .icons > div i
+{
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+#contact .icons > div:hover
+{
+    transition: all 500ms ease;
+    color: #fff;
+    background-color: #0078ff;
+    box-shadow: 0 0 0 5px #cde1f8;
+
+}
+
+
+/* --------------------- Footer ----------------------- */
+
+footer 
+{
+    background-color: #0062d3;
+    color: #fff;
+}
+footer a
+{
+    text-decoration: none;
+    color: white;
+}
+footer a:hover
+{
+    color: white;
+}
+
+/* ----------------------------------------------------- */
+
